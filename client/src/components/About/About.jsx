@@ -2,16 +2,16 @@ import React, { Component } from 'react';
 import './About.scss';
 import { Jumbotron } from 'react-bootstrap';
 import { AwesomeButton } from 'react-awesome-button';
+import { Link } from 'react-router-dom';
 
 export default class About extends Component {
     render() {
         return (
             <div>
                 <div className="containers">
-                    <Jumbotron>
-                        <div className="about-rory-healy-tournament">
+                    <Jumbotron className="about-rory-healy-tournament">
+                        <div className="about-rory-healy-tournament-content">
                             <h4>Rory Healy Memorial Tournament</h4>
-                            <img className="rory" />
                             <p>
                                 Rory was a character. Dressing up as: "The Great Falcony" at his
                                 favorite football teams games is just the start. Rory will be remembered 
@@ -19,16 +19,25 @@ export default class About extends Component {
                                 willing to help. 
                             </p>
                         </div>
+                        <div className="rory-image">
+                            <img className="rory" />
+                        </div>
                     </Jumbotron>
                 </div>
                 <div className="containers">
-                    <div>
-                        <h4>GHS79</h4>
-                        <p>
-                            GHS79 Golf will be hosting tournaments to generate revenue for charitable 
-                            organizations. 
-                        </p>
-                        <AwesomeButton>Proudly sponsored by</AwesomeButton>
+                    <div className="GHS79-information">
+                        <Jumbotron>
+                            <h4>GHS79</h4>
+                            <p>
+                                GHS79 Golf will be hosting tournaments to generate revenue for charitable 
+                                organizations. 
+                            </p>
+                            <Link to="/Sponsors">
+                                <AwesomeButton>
+                                    Proudly sponsored by
+                                </AwesomeButton>
+                            </Link>
+                        </Jumbotron>
                     </div>
                 </div>
                 <div className="containers">
