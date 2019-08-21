@@ -12,16 +12,22 @@ export default class EventInformation extends Component {
                             <h4>Rory Healy Memorial Tournament</h4>
                             <p>
                                 Rory was a character. Dressing up as: "The Great Falcony" at his
-                                favorite football teams games is just the start. Rory will be remembered 
-                                as a brother, a son, a friend, a lover, and an amazing individual always 
-                                willing to help. 
+                                favorite football teams games is just the start. Rory will be remembered
+                                as a brother, a son, a friend, a lover, and an amazing individual always
+                                willing to help.
                             </p>
                         </div>
                         <div className="rory-image">
                             <img className="rory" />
                         </div>
                     </Jumbotron>
-                </div>                
+                </div>
+                <div className="event-information-sub-container">
+                    <p>
+                        rory was a recipient of organ donations therefore the revenue generated from this
+                        tournament will be given to (insert organ donation foundation here).
+                    </p>
+                </div>
             </div>
         )
     }
