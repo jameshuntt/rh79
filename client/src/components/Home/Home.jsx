@@ -9,9 +9,10 @@ export default class Home extends Component {
         return (
                 <div className="home-container">
                     <div className="current-tournament-info">
-                                    <Jumbotron 
+                                    <div
                                         className="home-jumbotron-rory-tournament"
                                     >
+                                        <div className="home-jumbotron-rory-tournament-text">
                                         <h1>
                                             Rory Healy Memorial Golf Tournament
                                         </h1>
@@ -19,25 +20,25 @@ export default class Home extends Component {
                                             Saturday September 28th, 2019
                                         </h3>
                                         <p>
-                                            this will be a tournament leading to the generation 
-                                            of revenue for charity homie
+                                            All Proceeds Will Be Donated To Donate Life America
                                         </p>
-                                        <h4 className="home-dinner-heading">$50 Dinner</h4>
-                                        <h4 className="home-golf-heading" >$75 Golf</h4>
+                                       
+                                        <p>
+                                            In Memory Of Rory Healy
+                                        </p>
+                                        <h4>$50 Dinner &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $75 Golf</h4>
+                                        </div>
+                                        
                                         <div className="rory-healy-jumbotron-buttons">
-                                            <Link to="/EventInformation">
-                                                <AwesomeButton type="primary">
-                                                    Event information
-                                                </AwesomeButton>
-                                            </Link>
-                                            <div className="home-spacer" />
+                                            
                                             <Link to="/Register">
                                                 <AwesomeButton type="primary">
                                                     Register
                                                 </AwesomeButton>
                                             </Link>
+
                                         </div>
-                                    </Jumbotron>
+                                    </div>
                                 </div>
                 </div>
         )
