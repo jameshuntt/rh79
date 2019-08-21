@@ -8,7 +8,7 @@ export default class About extends Component {
     render() {
         return (
             <div className="about-page-main-container">
-                <div className="about-page-sub-container">
+                <div className="about-page-sub-container-one">
                     <div className="GHS79-images">
                         <img src="" alt="ghs79" />
                     </div>

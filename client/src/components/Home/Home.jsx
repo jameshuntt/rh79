@@ -7,11 +7,8 @@ import './Home.scss'
 export default class Home extends Component {
     render() {
         return (
-            <div>
                 <div className="home-container">
-                        <Container>
-                            <Row>
-                                <Col>
+                    <div className="current-tournament-info">
                                     <Jumbotron 
                                         className="home-jumbotron-rory-tournament"
                                     >
@@ -25,6 +22,8 @@ export default class Home extends Component {
                                             this will be a tournament leading to the generation 
                                             of revenue for charity homie
                                         </p>
+                                        <h4 className="home-dinner-heading">$50 Dinner</h4>
+                                        <h4 className="home-golf-heading" >$75 Golf</h4>
                                         <div className="rory-healy-jumbotron-buttons">
                                             <Link to="/EventInformation">
                                                 <AwesomeButton type="primary">
@@ -39,15 +38,8 @@ export default class Home extends Component {
                                             </Link>
                                         </div>
                                     </Jumbotron>
-                                </Col>
-                                <Col>
-                                    <h4 className="home-dinner-heading">$50 Dinner</h4>
-                                    <h4 className="home-golf-heading" >$75 Golf</h4>
-                                </Col>
-                            </Row>
-                        </Container>
+                                    </div>
                 </div>
-            </div>
         )
     }
 }
