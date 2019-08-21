@@ -9,14 +9,13 @@ export default class CustomNavbar extends Component {
     render() {
         return (
             <div className="navbar-container">
+                    <div className="navbar-logo-container">
+                        <img className="navbar-logo" src="/assets/GHS79.png" />
+                    </div>
                     <div className="navbar-brand-container">
                         <h3 className="navbar-brand">
                             Rory Healy Memorial Golf Tournament
                         </h3>
-                    </div>
-                    <div className="spacer" />
-                    <div className="navbar-logo-container">
-                        <img className="navbar-logo" src="/assets/GHS79.png" />
                     </div>
                     <div className="spacer" />
                     <div>
