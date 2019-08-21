@@ -22,7 +22,11 @@ export default class EventInformation extends Component {
                         </div>
                     </Jumbotron>
                         <div className="rory-image">
-                            <img className="rory" alt="rory" src="/assets/rory-final.png" />
+                            <img
+                                className="rory"
+                                alt="rory"
+                                src="/assets/rory-final.png"
+                            />
                         </div>
                 </div>
                 <div className="event-information-sub-container">
