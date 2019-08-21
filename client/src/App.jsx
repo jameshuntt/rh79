@@ -23,7 +23,7 @@ export default class App extends Component {
                     <Route path="/SignIn" component={SignIn} />*/}
                     <Route path="/Contact" component={Contact} />
                     <Route path="/Sponsors" component={Sponsors} />
-                    <Route path="/Checkout" component={Checkout} />
+                    <Route path="/Register" component={Checkout} />
                 </Switch>
                 <Footer />
             </div>
