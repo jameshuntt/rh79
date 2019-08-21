@@ -18,7 +18,7 @@ export default class App extends Component {
                 <CustomNavbar />
                 <Switch>
                     <Route exact path="/" component={Home} />
-                    <Route path="/About" component={About} />
+                    <Route path="/EventInformation" component={About} />
                     {/*<Route path="/SignUp" component={SignUp} />
                     <Route path="/SignIn" component={SignIn} />*/}
                     <Route path="/Contact" component={Contact} />
