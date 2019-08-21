@@ -10,12 +10,6 @@ export default class Home extends Component {
         return (
             <div>
                 <div className="home-container">
-                    {/*<LazyHero 
-                        className="home-parallax"
-                        parallaxOffset="100"
-                        opacity=".6"
-                        imageSrc="/assets/golfCourse.jpg"
-                    >*/}
                         <Container>
                             <Row>
                                 <Col>
@@ -45,9 +39,6 @@ export default class Home extends Component {
                                 </Col>
                             </Row>
                         </Container>
-                    {/*</LazyHero>*/}
-                </div>
-                <div className="home-container">
                 </div>
             </div>
         )
