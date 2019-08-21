@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import './EventInformation.scss'
+import { Jumbotron } from 'react-bootstrap';
+import './EventInformation.scss';
 
 export default class EventInformation extends Component {
     render() {
