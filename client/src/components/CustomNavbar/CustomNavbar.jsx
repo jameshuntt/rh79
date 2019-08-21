@@ -13,9 +13,9 @@ export default class CustomNavbar extends Component {
                         <img className="navbar-logo" src="/assets/GHS79.png" />
                     </div>
                     <div className="navbar-brand-container">
-                        <h3 className="navbar-brand">
-                            Rory Healy Memorial Golf Tournament
-                        </h3>
+                        <h5 className="navbar-brand">
+                            Guilderland High School Class of 1979 Charity Golf Tournaments
+                        </h5>
                     </div>
                     <div className="spacer" />
                     <div>
