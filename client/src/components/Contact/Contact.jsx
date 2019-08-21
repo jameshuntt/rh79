@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Jumbotron, Container, Col, Row } from 'react-bootstrap';
+import { Jumbotron } from 'react-bootstrap';
 import './Contact.scss';
 import { AwesomeButton } from 'react-awesome-button';
 import axios from 'axios';

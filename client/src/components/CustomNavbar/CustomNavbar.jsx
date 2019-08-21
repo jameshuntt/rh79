@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import { AwesomeButton } from 'react-awesome-button';
 import "react-awesome-button/dist/styles.css";
 import { Link } from 'react-router-dom';
-import { Col, Container, Row, Dropdown } from 'react-bootstrap';
 import './CustomNavbar.scss'
 
 export default class CustomNavbar extends Component {
@@ -10,7 +9,7 @@ export default class CustomNavbar extends Component {
         return (
             <div className="navbar-container">
                     <div className="navbar-logo-container">
-                        <img className="navbar-logo" src="/assets/GHS79.png" />
+                        <img className="navbar-logo" src="/assets/GHS79.png" alt="logo" />
                     </div>
                     <div className="navbar-brand-container">
                         <h5 className="navbar-brand">

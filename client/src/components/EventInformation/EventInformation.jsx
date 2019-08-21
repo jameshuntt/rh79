@@ -17,10 +17,10 @@ export default class EventInformation extends Component {
                                 willing to help.
                             </p>
                         </div>
-                        <div className="rory-image">
-                            <img className="rory" />
-                        </div>
                     </Jumbotron>
+                        <div className="rory-image">
+                            <img className="rory" alt="rory" />
+                        </div>
                 </div>
                 <div className="event-information-sub-container">
                     <p>

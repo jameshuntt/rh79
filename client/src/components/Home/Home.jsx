@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import LazyHero from 'react-lazy-hero';
 import { Container, Col, Row, Jumbotron } from 'react-bootstrap';
 import { AwesomeButton } from 'react-awesome-button';
 import { Link } from 'react-router-dom';

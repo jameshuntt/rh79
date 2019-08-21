@@ -10,7 +10,7 @@ export default class About extends Component {
             <div className="about-page-main-container">
                 <div className="about-page-sub-container">
                     <div className="GHS79-images">
-                        <img src="" />
+                        <img src="" alt="ghs79" />
                     </div>
                     <div className="GHS79-information">
                         <Jumbotron>
