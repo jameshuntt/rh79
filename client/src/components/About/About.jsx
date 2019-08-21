@@ -8,16 +8,6 @@ export default class About extends Component {
         return (
             <div>
                 <div className="containers">
-                    <div>
-                        <h4>GHS79</h4>
-                        <p>
-                            GHS79 Golf will be hosting tournaments to generate revenue for charitable 
-                            organizations. 
-                        </p>
-                        <AwesomeButton>Proudly sponsored by</AwesomeButton>
-                    </div>
-                </div>
-                <div className="containers">
                     <Jumbotron>
                         <div className="about-rory-healy-tournament">
                             <h4>Rory Healy Memorial Tournament</h4>
@@ -30,6 +20,16 @@ export default class About extends Component {
                             </p>
                         </div>
                     </Jumbotron>
+                </div>
+                <div className="containers">
+                    <div>
+                        <h4>GHS79</h4>
+                        <p>
+                            GHS79 Golf will be hosting tournaments to generate revenue for charitable 
+                            organizations. 
+                        </p>
+                        <AwesomeButton>Proudly sponsored by</AwesomeButton>
+                    </div>
                 </div>
                 <div className="containers">
                     <h4>Many more to come</h4>
