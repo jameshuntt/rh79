@@ -7,8 +7,8 @@ import { Link } from 'react-router-dom';
 export default class About extends Component {
     render() {
         return (
-            <div>
-                <div className="containers">
+            <div className="about-page-main-container">
+                <div className="about-page-sub-container">
                     <div className="GHS79-images">
                         <img src="" />
                     </div>
@@ -27,7 +27,7 @@ export default class About extends Component {
                         </Jumbotron>
                     </div>
                 </div>
-                <div className="containers">
+                <div className="about-page-sub-container">
                     <h4>Many more to come</h4>
                 </div>
             </div>
