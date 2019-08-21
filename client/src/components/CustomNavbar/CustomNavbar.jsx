@@ -29,11 +29,6 @@ export default class CustomNavbar extends Component {
                                 About us
                             </AwesomeButton>
                         </Link>
-                        <Link to="/Register">
-                            <AwesomeButton className="navbar-button" type="primary">
-                                Register
-                            </AwesomeButton>
-                        </Link>
                     </div>
             </div>
         )
