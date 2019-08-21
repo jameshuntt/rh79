@@ -38,7 +38,7 @@ export default class Home extends Component {
                                             </Link>
                                         </div>
                                     </Jumbotron>
-                                    </div>
+                                </div>
                 </div>
         )
     }

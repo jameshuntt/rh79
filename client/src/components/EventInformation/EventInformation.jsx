@@ -6,7 +6,10 @@ export default class EventInformation extends Component {
     render() {
         return (
             <div className="event-information-main-container">
-                <div className="event-information-sub-container">
+                <div className="event-information-sub-container-two">
+                    
+                </div>
+                <div className="event-information-sub-container-one">
                     <Jumbotron className="about-rory-healy-tournament">
                         <div className="about-rory-healy-tournament-content">
                             <h4>Rory Healy Memorial Tournament</h4>
@@ -19,7 +22,7 @@ export default class EventInformation extends Component {
                         </div>
                     </Jumbotron>
                         <div className="rory-image">
-                            <img className="rory" alt="rory" />
+                            <img className="rory" alt="rory" src="/assets/rory-final.png" />
                         </div>
                 </div>
                 <div className="event-information-sub-container">
