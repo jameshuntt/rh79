@@ -5,8 +5,8 @@ import './EventInformation.scss';
 export default class EventInformation extends Component {
     render() {
         return (
-            <div className="event-information-container">
-                <div className="containers">
+            <div className="event-information-main-container">
+                <div className="event-information-sub-container">
                     <Jumbotron className="about-rory-healy-tournament">
                         <div className="about-rory-healy-tournament-content">
                             <h4>Rory Healy Memorial Tournament</h4>
