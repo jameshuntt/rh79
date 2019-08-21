@@ -26,11 +26,19 @@ export default class Home extends Component {
                                             this will be a tournament leading to the generation 
                                             of revenue for charity homie
                                         </p>
-                                        <Link to="/SignUp">
-                                            <AwesomeButton type="primary">
-                                                Sign Up
-                                            </AwesomeButton>
-                                        </Link>
+                                        <div className="rory-healy-jumbotron-buttons">
+                                            <Link to="/EventInformation">
+                                                <AwesomeButton type="primary">
+                                                    Event information
+                                                </AwesomeButton>
+                                            </Link>
+                                            <div className="home-spacer" />
+                                            <Link to="/Register">
+                                                <AwesomeButton type="primary">
+                                                    Register
+                                                </AwesomeButton>
+                                            </Link>
+                                        </div>
                                     </Jumbotron>
                                 </Col>
                                 <Col>
