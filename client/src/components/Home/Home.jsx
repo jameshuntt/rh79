@@ -10,12 +10,12 @@ export default class Home extends Component {
         return (
             <div>
                 <div className="home-container">
-                    <LazyHero 
+                    {/*<LazyHero 
                         className="home-parallax"
                         parallaxOffset="100"
                         opacity=".6"
                         imageSrc="/assets/golfCourse.jpg"
-                    >
+                    >*/}
                         <Container>
                             <Row>
                                 <Col>
@@ -45,15 +45,9 @@ export default class Home extends Component {
                                 </Col>
                             </Row>
                         </Container>
-                    </LazyHero>
+                    {/*</LazyHero>*/}
                 </div>
                 <div className="home-container">
-                    <Link to="/About"><AwesomeButton>About</AwesomeButton></Link>
-                    <Link to="/Checkout"><AwesomeButton>Checkout</AwesomeButton></Link>
-                    <Link to="/Contact"><AwesomeButton>Contact</AwesomeButton></Link>
-                    <Link to="/SignIn"><AwesomeButton>Sign in</AwesomeButton></Link>
-                    <Link to="/SignUp"><AwesomeButton>Sign up</AwesomeButton></Link>
-                    <Link to="/Sponsors"><AwesomeButton>Sponsors</AwesomeButton></Link>
                 </div>
             </div>
         )

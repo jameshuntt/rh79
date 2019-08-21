@@ -128,7 +128,7 @@ export default class SignUp extends Component {
         //axios.get('http://localhost:5000/signup/', signup)
           //  .then(res => console.log(res.data));
 
-            //changes window location taking them back to home after they submit their signup
+        //changes window location taking them back to home after they submit their signup
         window.location = '/';
     }
 

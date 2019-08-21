@@ -10,8 +10,9 @@ export default class CustomNavbar extends Component {
         return (
             <div id="container" style={{ width: '100vw', height: '8vh', background: 'black', opacity: '.8', display: 'flex', flexDirection: 'row' }}>
                     <div style={{ display: 'flex', marginRight: '0' }}>
-                        <Link to="/"><AwesomeButton style={{ paddingTop: '1vh', paddingRight: '1vw', paddingBottom: '1vh', paddingLeft: '1vw' }} type="primary">Home</AwesomeButton></Link>
-                        <Link to="/About"><AwesomeButton style={{ paddingTop: '1vh', paddingRight: '1vw', paddingBottom: '1vh', paddingLeft: '1vw' }} type="primary">About</AwesomeButton></Link>
+                        <h3 className="navbar-brand">Rory Healy Memorial Golf Tournament</h3>
+                        {/*<Link to="/"><AwesomeButton style={{ paddingTop: '1vh', paddingRight: '1vw', paddingBottom: '1vh', paddingLeft: '1vw' }} type="primary">Home</AwesomeButton></Link>
+                        <Link to="/About"><AwesomeButton style={{ paddingTop: '1vh', paddingRight: '1vw', paddingBottom: '1vh', paddingLeft: '1vw' }} type="primary">About</AwesomeButton></Link>*/}
                     </div>
                     <div style={{ display: 'flex' }} className="spacer" />
                     <div style={{ display: 'flex', margin: '0', padding: '0' }}>
@@ -30,7 +31,7 @@ export default class CustomNavbar extends Component {
                             <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
                         </Dropdown.Menu>
         </Dropdown>*/}
-                        <Link to="/SignIn"><AwesomeButton style={{ paddingTop: '1vh', paddingRight: '1vw', paddingBottom: '1vh', paddingLeft: '1vw' }} type="primary">Sign in</AwesomeButton></Link>
+                        <Link to="/SignUp"><AwesomeButton style={{ paddingTop: '1vh', paddingRight: '1vw', paddingBottom: '1vh', paddingLeft: '1vw' }} type="primary">Sign up</AwesomeButton></Link>
                         <Link to="/Sponsors"><AwesomeButton style={{ paddingTop: '1vh', paddingRight: '1vw', paddingBottom: '1vh', paddingLeft: '1vw' }} type="primary">Sponsors</AwesomeButton></Link>
                     </div>
             </div>
