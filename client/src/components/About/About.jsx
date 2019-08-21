@@ -9,22 +9,6 @@ export default class About extends Component {
         return (
             <div>
                 <div className="containers">
-                    <Jumbotron className="about-rory-healy-tournament">
-                        <div className="about-rory-healy-tournament-content">
-                            <h4>Rory Healy Memorial Tournament</h4>
-                            <p>
-                                Rory was a character. Dressing up as: "The Great Falcony" at his
-                                favorite football teams games is just the start. Rory will be remembered 
-                                as a brother, a son, a friend, a lover, and an amazing individual always 
-                                willing to help. 
-                            </p>
-                        </div>
-                        <div className="rory-image">
-                            <img className="rory" />
-                        </div>
-                    </Jumbotron>
-                </div>
-                <div className="containers">
                     <div className="GHS79-images">
                         <img src="" />
                     </div>
