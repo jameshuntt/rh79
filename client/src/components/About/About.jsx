@@ -25,6 +25,9 @@ export default class About extends Component {
                     </Jumbotron>
                 </div>
                 <div className="containers">
+                    <div className="GHS79-images">
+                        <img src="" />
+                    </div>
                     <div className="GHS79-information">
                         <Jumbotron>
                             <h4>GHS79</h4>
