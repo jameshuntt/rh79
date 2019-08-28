@@ -1,41 +1,127 @@
 .navbar-container {
     width: 100vw;
-    height: 8vh;
+    height: 9vh;
     background: black;
-    opacity: .8;
     display: flex;
     flex-direction: row;
+    position: fixed;
 }
 
-.navbar-brand-container {
-    display: flex;
-    margin-right: 0;
-    margin-left: 1vw;
-}
-
-.navbar-brand {
-    color: white;
-}
-
-.navbar-logo-container {
-    display: flex;
-    margin: 0;
-    padding: 0;
+.navbar-logo-link {
+    margin-left: 9%;
 }
 
 .navbar-logo {
+    margin-top: 1vh;
     height: 7vh;
     width: 13vh;
 }
 
-.spacer {
-    width: 28vw;
-    display: flex;
+.navbar-brand {
+    height: 7vh;
+    margin-top: 1vh;
+    color: white;
+    width: 35%;
+}
+
+.spacer1 {
+    width: 9vh;
+}
+
+.spacer2 {
+    width: 9vh;
 }
 
 .navbar-button {
-    padding-top: 1vh;
+    margin-top: 1vh;
+    margin-right: 1vw;
+    margin-bottom: 2vh;
+    height: 7vh;
+    width: 20vh;
     padding-right: 1vw;
-    padding-bottom: 1vh;
-    padding-left: 1vw;
+    display: flex;
+}
+
+//.aws-btn {
+//    --button-primary-color: #F81D1D;
+//    --button-primary-color-dark: #D81A1A;
+//    --button-primary-color-hover: #A01313;
+//    --button-primary-color-active: #C91818;
+//  }
+
+.burger-menu-icon {
+    display: none;
+    height: 45px;
+    width: 45px;
+    z-index: 5;
+    margin-top: 1vh;
+}
+
+.side-nav {
+    display: none;
+}
+
+@media (max-width: 1200px) {
+    .navbar-brand {
+        display: none;
+    }
+    .spacer1 {
+        width: 40vw;
+    }
+}
+
+@media (max-width: 992px) {
+
+}
+
+@media (max-width: 650px) {
+    .burger-menu-icon {
+        display: flex;
+    }
+    .navbar-links {
+        display: none;
+    }
+    .navbar-button {
+        display: none;
+    }
+    .spacer1 {
+        display: flex;
+        width: 62vh;
+    }
+}
+
+//xs >= 576px
+//sm >= 768px
+//md >= 992px
+//lg >= 1200px
+//xl <= 1200px
+
+.aws-btn {
+    --button-default-height: 48px;
+    --button-default-font-size: 14px;
+    --button-default-border-radius: 6px;
+    --button-horizontal-padding: 20px;
+    --button-raise-level: 5px;
+    --button-hover-pressure: 2;
+    --transform-speed: 0.185s;
+    --button-primary-color: #f3240b;
+    --button-primary-color-dark: #a01a1a;
+    --button-primary-color-light: #d4d9e4;
+    --button-primary-color-hover: #a01313;
+    --button-primary-border: none;
+    --button-secondary-color: #fffc6c;
+    --button-secondary-color-dark: #b9b500;
+    --button-secondary-color-light: #6c6a00;
+    --button-secondary-color-hover: #fffb3e;
+    --button-secondary-border: none;
+    --button-anchor-color: #f3c8ad;
+    --button-anchor-color-dark: #734922;
+    --button-anchor-color-light: #4c3016;
+    --button-anchor-color-hover: #f1bfa0;
+    --button-anchor-border: 1px solid #8c633c;
+}
+
+.navbar-links {
+    display: flex;
+    flex-direction: row;
 }

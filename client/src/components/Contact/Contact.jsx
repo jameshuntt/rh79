@@ -92,7 +92,8 @@ export default class Contact extends Component {
 
     render() {
         return (
-            <div className="containers">
+            <div className="contact-main-container">
+                <div className="contact-sub-container">
                 <Jumbotron className="jumbo">
                     <h4>Name</h4>
                     <input 
@@ -138,6 +139,7 @@ export default class Contact extends Component {
                         onChange={this.onSubmit}
                     >Submit</AwesomeButton>
                 </Jumbotron>
+                </div>
             </div>
         )
     }

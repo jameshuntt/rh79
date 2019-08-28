@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 import { Route, Switch } from 'react-router-dom';
 import CustomNavbar from './components/CustomNavbar/CustomNavbar';
-import Home from './components/Home/Home';
+import ChaseHome from './components/Home/ChaseHome';
 import About from './components/About/About';
 import Contact from './components/Contact/Contact';
 import EventInformation from './components/EventInformation/EventInformation';
@@ -16,7 +16,7 @@ export default class App extends Component {
             <div className="App">
                 <CustomNavbar />
                 <Switch>
-                    <Route exact path="/" component={Home} />
+                    <Route exact path="/" component={ChaseHome} />
                     <Route path="/About" component={About} />
                     <Route path="/Contact" component={Contact} />
                     <Route path="/EventInformation" component={EventInformation} />

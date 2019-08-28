@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { Container, Col, Row, Jumbotron } from 'react-bootstrap';
 import { AwesomeButton } from 'react-awesome-button';
 import { Link } from 'react-router-dom';
 import './Home.scss'
@@ -9,15 +8,15 @@ export default class Home extends Component {
         return (
                 <div className="home-container">
                     <div className="current-tournament-info">
-                                    <Jumbotron 
-                                        className="home-jumbotron-rory-tournament"
-                                    >
-                                        <h1>
-                                            Rory Healy Memorial Golf Tournament
-                                        </h1>
-                                        <h3>
-                                            Saturday September 28th, 2019
-                                        </h3>
+                        <div
+                            className="home-jumbotron-rory-tournament"
+                        >
+                        <h1>
+                            Rory Healy Memorial Golf Tournament
+                        </h1>
+                        <h3>
+                            Saturday September 28th, 2019
+                        </h3>
                                         <p>
                                             this will be a tournament leading to the generation 
                                             of revenue for charity homie
@@ -37,8 +36,8 @@ export default class Home extends Component {
                                                 </AwesomeButton>
                                             </Link>
                                         </div>
-                                    </Jumbotron>
-                                </div>
+                                    </div>                
+                    </div>
                 </div>
         )
     }

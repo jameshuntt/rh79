@@ -4,8 +4,14 @@
     margin-left: 35vw;
 }
 
-.containers {
-    height: 92vh;
-    padding-top: 7vh;
+.contact-main-container {
+    height: 182vh;
+    width: 100vw;
+    padding-top: 26vh;
+    display: flex;
+    flex-direction: column;
 }
 
+.contact-sub-container {
+    height: 91vh;
+}

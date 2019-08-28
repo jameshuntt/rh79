@@ -1,0 +1,18 @@
+added the side-drawer, still iffy needs some work, added carousels, working on rendering a different carousel with each button on the side, 
+tomorrow i will work on more of the z-index stuff because there are current issues with the z-index of many components, also, i have been 
+struggling with the map component, need a token or api key depending on the route, also made a section for a paypal api insert, i feel thats 
+the only option until we can sign the documents with elijah and create our ein knowing how many members we have, theres a lot of things that 
+will be easier once we create the ein like using mailjet, it is free up to 10,000 emails a month which is way higher than anything we would 
+need.... i styled the awesomebuttons so they are all the appropriate color.... theres a lot of stuff done from the last commit i have been 
+trying out a lot of things and adding them to the CDN library..... another thing is that the navbar is acting funky since i added 
+position: fixed in the scss file maybe you can help me with that but either way, i feel as though we just need to fix some css and incorporate 
+the apis we are going to use then we will be done, pretty much all done but with scss files one name can not be the same as the other in any 
+scss file without issues with loading the styles from the other component so tomorrow im going to make better classnames and maybe try using id 
+so we can have some things uniorm and others diffferent in the classnames of the components.... idk what else i have to say call me when you get 
+the chance tomorrow or like today lol we can discuss what apis we are going to use and fix the css issues and try to possibly meetup with elijah 
+so we can finally get the ball rolling and create the accounts we need the ein for.... still hoping he will be interested in working with us, we 
+just need him to sign the docs in person maybe we can make it sound better to him if he knows we wont be needing to meetup all the time and we can 
+use git to our advantage to complete projects, idk i just wanna make the ein already and i want to give him the opportunity to talk about that 
+bothered him and get past it becayse we can definitely do some good work together i just need to know where he stands so we can progress.... back 
+to the application, the side drawer is acting real funky definitely take a look at it if you have the chance and lmk what i did wrong bc i wanna 
+learn and the best way to learn is to make mistakes and fix them so def lmk what you see wrong with it bc idk what i need to do to fix it

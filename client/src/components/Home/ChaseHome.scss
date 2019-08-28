@@ -1,0 +1,88 @@
+.home-container {
+    width: 100vw;
+    height: 91vh;
+    margin-top: 0;
+    padding-top: 0vh;
+    background-image: url('/assets/golfcourse3.jpg');
+    background-size: cover;
+}
+
+.home-parallax {
+    height: 93vh;
+    width: 100vw;
+}
+
+.home-jumbotron-rory-tournament {
+    height: 75vh;
+    width: 70vw;
+    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2);   
+    border-radius: 5px;
+    position: relative;
+    z-index: 1;
+    background: inherit;
+    overflow: hidden;
+    margin-left: 15vw;
+    background: inherit;
+    background-color: rgba(14, 11, 11, 0.15);  
+    backdrop-filter: blur(5px);
+   
+}
+.home-jumbotron-rory-tournament:before {
+    content: "";
+    position: absolute;
+    background: inherit;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    box-shadow: inset 0 0 2000px rgba(255, 255, 255, .15);
+    filter: blur(10px);
+    margin: -20px;
+}
+.home-jumbotron-rory-tournament-text{
+    padding-top: 10vh;
+    z-index: 2;
+    color: white;
+    opacity:1;
+    font-family: Arial, Helvetica, sans-serif;
+    text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+    h1{
+        font-size: 3.2vw;
+    }
+    h3{
+        font-size: 3vw;
+        color: rgb(226, 223, 223);
+    }
+    h4{
+        font-size: 2.5vw;
+        color: rgb(201, 250, 221);
+    }
+    p{
+        font-size: 2vw;
+        color: rgb(226, 223, 223);
+        padding-left:3vw;
+        padding-right:3vw;
+    }
+}
+
+.rory-healy-jumbotron-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+    justify-content: space-evenly;
+    padding-top: 10vh;
+}
+
+.home-spacer {
+    width: 1vw;
+}
+
+.current-tournament-info {
+    padding-top: 10vh;
+}
+

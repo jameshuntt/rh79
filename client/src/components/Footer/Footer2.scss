@@ -1,0 +1,26 @@
+.footer2-container {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    background-color: #1C1C1C;
+}
+
+.footer2-vertical-line {
+    height: 20vh;
+    width: 1px;
+}
+
+.footer2-horizontal-line {
+    height: 1px;
+    width: 80vw;
+}
+
+.footer2-sub-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.column-one-footer {
+    width: 20vw;
+}

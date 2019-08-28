@@ -8,21 +8,29 @@ export default class Footer extends Component {
             <div className="footer-container">
                 <Container>
                     <Row>
-                        <Col>
-                            <h3>
-                                Guilderland High School Class of 79 Golf Tournaments
-                            </h3>
+                        <Col xs={12}>
+                            <hr className="footer-horizontal-line" color="red" />
                         </Col>
-                        <Col>
+                    </Row>
+                    <Row>
+                        <Col xs={12} sm={4}>
+                            <h3>
+                                GHS79 Golf
+                            </h3>
                             <p>
-                                random stuff random stuffrandom stuff random stuff
-                                random stuff random stuffrandom stuff random stuff
-                                random stuff random stuffrandom stuff random stuff
-                                random stuff random stuffrandom stuff random stuff
+                                Golf tournaments held by the Guilderland High School class of 
+                                1979 directly benefiting charitible organizations.
                             </p>
                         </Col>
-                        <Col>
-                            <h4>Coming up next:</h4>
+                        <Col xs={12} sm={4}>
+                            <h4>Site map</h4>
+                            <p>
+                                GHS79 is an organization in which Golf Tournaments will be
+                                held in order to generate money for charitable organizations.
+                            </p>
+                        </Col>
+                        <Col xs={12} sm={4}>
+                            <h4>Next event:</h4>
                             <h5>Rory Healy Memorial Tournament</h5>
                             <h5>Date: 09/28/2018</h5>
                             <h6>Time: 12:00pm</h6>
@@ -30,7 +38,8 @@ export default class Footer extends Component {
                     </Row>
                     <Row>
                         <Col xs={12}>
-                            <h5>Copyright WebAmbrosia LLC 2019</h5>
+                            <hr className="footer-horizontal-line" color="#f81d1d" />
+                            <h5>Copyright WebAmbrosia LLC @ 2019</h5>
                         </Col>
                     </Row>
                 </Container>

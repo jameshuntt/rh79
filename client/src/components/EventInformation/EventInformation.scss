@@ -1,22 +1,30 @@
-.event-information-sub-container-two {
-    height: 92vh;
-    width: 100vw;
-}
-
-.event-information-sub-container-one {
+.information-sub-container-one {
     height: 92vh;
     width: 100vw;
     display: flex;
     flex-direction: row;
     justify-items: center;
     justify-content: space-evenly;
-    background-image: url('/assets/behind-rory-info.jpg');
+    //background-image: url('/assets/rory-info-bg.png');
+}
+
+.information-sub-container-two {
+    height: 92vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    //background-image: url('/assets/background-rory-last.jpg');
 }
 
 .about-rory-healy-tournament {
+    margin-left: 10vw;
     height: 50vh;
     width: 45vw;
     margin-top: 17vh;
+    background-color: #a3a0a0;
+    border-radius: 10%;
+    display: flex;
+    flex-direction: column;
 }
 
 .rory {
@@ -24,4 +32,35 @@
     width: 30vw;
     padding-left: 3vw;
     margin-top: 7vh;
+}
+
+.sub-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.rory-healy-tournament-info {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 50vw;
+}
+
+.about-rory-healy-tournament-content {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.rory-image-navigation {
+    height: 100vh;
+    width: 30vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.rory-images {
+    height: 100vw;
+    width: 70vw;
+
 }
