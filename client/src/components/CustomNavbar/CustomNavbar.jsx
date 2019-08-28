@@ -14,18 +14,6 @@ export default class CustomNavbar extends Component {
         }
     }
 
-    
-    //showSideNav() {
-    //    this.setState((prevState) => {
-    //        return {sideNavOpen: !prevState.sideNavOpen};
-    //    });
-    //};
-
-    //hideideNav() {
-    //    this.setState({sideDrawerOpen: false});
-    //    
-    //};
-
     drawerToggleClickHandler = () => {
         this.setState((prevState) => {
             return {sideDrawerOpen: !prevState.sideDrawerOpen};
@@ -35,12 +23,6 @@ export default class CustomNavbar extends Component {
     backdropClickHandler = () => {
         this.setState({sideDrawerOpen: false});
     };
-
-      
-    //hideSideNav() {
-    //    document.getElementById("mySidebar").style.display = "none";
-    //}
-    
 
     render() {
         let backdrop;
