@@ -169,7 +169,7 @@ export default class EventInformation extends Component {
     render() {
         return (
             <div className="main-container">
-                <div className="sub-container">
+                <div className="information-sub-container">
                     <div className="spacer" />
                     <div className="rory-tournament-info">
                         <div className="pricing-and-location">
@@ -195,6 +195,7 @@ export default class EventInformation extends Component {
                     </Map>
                     <h5>The tournament will be help at the White Plains Golf Course.</h5>
                     <h3>**map is supposed to go here**</h3>
+                    <h2>2350 Western Ave, Guilderland, NY 12084</h2>
                     </div>
                 </div>
                 <div className="information-sub-container-two">

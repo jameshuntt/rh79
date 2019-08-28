@@ -5,7 +5,7 @@
     flex-direction: row;
     justify-items: center;
     justify-content: space-evenly;
-    //background-image: url('/assets/rory-info-bg.png');
+    background-color: pink;
 }
 
 .information-sub-container-two {
@@ -13,7 +13,7 @@
     width: 100vw;
     display: flex;
     flex-direction: row;
-    //background-image: url('/assets/background-rory-last.jpg');
+    background-color: purple;
 }
 
 .about-rory-healy-tournament {
@@ -34,9 +34,10 @@
     margin-top: 7vh;
 }
 
-.sub-container {
+.information-sub-container {
     display: flex;
     flex-direction: row;
+    background-color: orange;
 }
 
 .rory-healy-tournament-info {
