@@ -134,9 +134,10 @@ export default class Contact extends Component {
                         onChange={this.onChangeMessage}
                     />
                     <br></br>
+                    <input type="submit" onClick={this.onSubmit}></input>
                     <AwesomeButton 
                         type="primary"
-                        onChange={this.onSubmit}
+                        onClick={this.onSubmit}
                     >Submit</AwesomeButton>
                 </Jumbotron>
                 </div>

@@ -1,23 +1,158 @@
 import React, { Component } from 'react';
-import ReactMapGL from 'react-map-gl';
+import ReactMapboxGl, { Layer, Feature } from 'react-mapbox-gl';
 import { Carousel } from 'react-bootstrap';
 import { AwesomeButton } from 'react-awesome-button';
 import './EventInformation.scss';
 
+const Map = ReactMapboxGl({
+    accessToken:
+      'pk.eyJ1IjoiZmFicmljOCIsImEiOiJjaWc5aTV1ZzUwMDJwdzJrb2w0dXRmc2d0In0.p6GGlfyV-WksaDV_KdN27A'
+  });
+
 export default class EventInformation extends Component {
+    renderComponent() {
+        switch(this.state.displayedCarousel) {
+            case "rory": return <Carousel state="rory">
+                                    <Carousel.Item>
+                                        <img
+                                        className="d-block w-100"
+                                        src="/assets/rory/rory1.jpg"
+                                        alt="First slide"
+                                        />
+                                        <Carousel.Caption>
+                                        <h3>First slide label</h3>
+                                        <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                                        </Carousel.Caption>
+                                    </Carousel.Item>
+                                    <Carousel.Item>
+                                        <img
+                                        className="d-block w-100"
+                                        src="/assets/rory/rory2.jpg"
+                                        alt="Third slide"
+                                        />
+
+                                        <Carousel.Caption>
+                                        <h3>Second slide label</h3>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                        </Carousel.Caption>
+                                    </Carousel.Item>
+                                    <Carousel.Item>
+                                        <img
+                                        className="d-block w-100"
+                                        src="/assets/rory/rory3.jpg"
+                                        alt="Third slide"
+                                        />
+
+                                        <Carousel.Caption>
+                                        <h3>Third slide label</h3>
+                                        <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                                        </Carousel.Caption>
+                                    </Carousel.Item>
+                                </Carousel>
+            case "costumes": return <Carousel state="jdrf">
+                                    <Carousel.Item>
+                                        <img
+                                        className="d-block w-100"
+                                        src="/assets/costumes/rory-clown.jpg"
+                                        alt="First slide"
+                                        />
+                                        <Carousel.Caption>
+                                        <h3>First slide label</h3>
+                                        <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                                        </Carousel.Caption>
+                                    </Carousel.Item>
+                                    <Carousel.Item>
+                                        <img
+                                        className="d-block w-100"
+                                        src="/assets/costumes/rory-deadpool.jpg"
+                                        alt="Third slide"
+                                        />
+
+                                        <Carousel.Caption>
+                                        <h3>Second slide label</h3>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                        </Carousel.Caption>
+                                    </Carousel.Item>
+                                    <Carousel.Item>
+                                        <img
+                                        className="d-block w-100"
+                                        src="/assets/costumes/rory-goosebumps.jpg"
+                                        alt="Third slide"
+                                        />
+
+                                        <Carousel.Caption>
+                                        <h3>Third slide label</h3>
+                                        <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                                        </Carousel.Caption>
+                                    </Carousel.Item>
+                                </Carousel>
+            case "jdrf": return  <Carousel value="falcony">
+                                        <Carousel.Item>
+                                            <img
+                                            className="d-block w-100"
+                                            src="/assets/jdrf/jdrf1.jpg"
+                                            alt="First slide"
+                                            />
+                                            <Carousel.Caption>
+                                            <h3>First slide label</h3>
+                                            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                                            </Carousel.Caption>
+                                        </Carousel.Item>
+                                        <Carousel.Item>
+                                            <img
+                                            className="d-block w-100"
+                                            src="/assets/jdrf/jdrf2.jpg"
+                                            alt="Third slide"
+                                            />
+
+                                            <Carousel.Caption>
+                                            <h3>Second slide label</h3>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                            </Carousel.Caption>
+                                        </Carousel.Item>
+                                        <Carousel.Item>
+                                            <img
+                                            className="d-block w-100"
+                                            src="/assets/jdrf/jdrf3.jpg"
+                                            alt="Third slide"
+                                            />
+
+                                            <Carousel.Caption>
+                                            <h3>Third slide label</h3>
+                                            <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                                            </Carousel.Caption>
+                                        </Carousel.Item>
+                                    </Carousel>
+            case "costumes": return <Carousel>
+                                        
+                                    </Carousel>
+        }
+    }
     constructor(props) {
         super(props);
 
         this.state = {
-            rory: true,
-            jdrf: false,
-            falcony: false,
-            costumes: false
+            rory: true
         }
     }
     onChooseRory() {
         this.setState({
-            
+            rory: true
+        })
+    }
+    onChooseJdrf() {
+        this.setState({
+            jdrf: true
+        })
+    }
+    onChooseFalcony() {
+        this.setState({
+            falcony: true
+        })
+    }
+    onChooseCostumes() {
+        this.setState({
+            costumes: true
         })
     }
     
@@ -47,11 +182,19 @@ export default class EventInformation extends Component {
                         </div>
                     </div>
                     <div className="rory-tournament-info">
-                    <ReactMapGL
-                        {...this.state.viewport}
-                        onViewportChange={(viewport) => this.setState({viewport})}
-                    />
+                    <Map
+                        style="mapbox://styles/mapbox/streets-v9"
+                        containerStyle={{
+                            height: '50vh',
+                            width: '50vw'
+                        }}
+                    >
+                        <Layer type="symbol" id="marker" layout={{ 'icon-image': 'marker-15' }}>
+                            <Feature coordinates={[-0.481747846041145, 51.3233379650232]} />
+                        </Layer>
+                    </Map>
                     <h5>The tournament will be help at the White Plains Golf Course.</h5>
+                    <h3>**map is supposed to go here**</h3>
                     </div>
                 </div>
                 <div className="information-sub-container-two">
@@ -82,134 +225,22 @@ export default class EventInformation extends Component {
                             rory was a recipient of organ donations therefore the revenue generated from this
                             tournament will be given to Donate Life America.
                         </p>
-                        <AwesomeButton type="primary">
+                        <AwesomeButton type="primary" onClick={this.onChooseRory}>
                             Rory
                         </AwesomeButton>
-                        <AwesomeButton type="primary">
+                        <AwesomeButton type="primary" onClick={this.onChooseJdrf}>
                             Rory at JDRF
                         </AwesomeButton>
-                        <AwesomeButton type="primary">
+                        <AwesomeButton type="primary" onClick={this.onChooseFalcony}>
                             Falcony
                         </AwesomeButton>
-                        <AwesomeButton type="primary">
+                        <AwesomeButton type="primary" onClick={this.onChooseCostumes}>
                             Costumes
                         </AwesomeButton>
                     </div>
 
                     <div className="rory-images">
-                        <Carousel state={rory}>
-                        <Carousel.Item>
-                            <img
-                            className="d-block w-100"
-                            src="/assets/rory/rory1.jpg"
-                            alt="First slide"
-                            />
-                            <Carousel.Caption>
-                            <h3>First slide label</h3>
-                            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-                            </Carousel.Caption>
-                        </Carousel.Item>
-                        <Carousel.Item>
-                            <img
-                            className="d-block w-100"
-                            src="/assets/rory/rory2.jpg"
-                            alt="Third slide"
-                            />
-
-                            <Carousel.Caption>
-                            <h3>Second slide label</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                            </Carousel.Caption>
-                        </Carousel.Item>
-                        <Carousel.Item>
-                            <img
-                            className="d-block w-100"
-                            src="/assets/rory/rory3.jpg"
-                            alt="Third slide"
-                            />
-
-                            <Carousel.Caption>
-                            <h3>Third slide label</h3>
-                            <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-                            </Carousel.Caption>
-                        </Carousel.Item>
-                        </Carousel>
-
-                        <Carousel state="jdrf">
-                        <Carousel.Item>
-                            <img
-                            className="d-block w-100"
-                            src="/assets/costumes/rory-clown.jpg"
-                            alt="First slide"
-                            />
-                            <Carousel.Caption>
-                            <h3>First slide label</h3>
-                            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-                            </Carousel.Caption>
-                        </Carousel.Item>
-                        <Carousel.Item>
-                            <img
-                            className="d-block w-100"
-                            src="/assets/costumes/rory-deadpool.jpg"
-                            alt="Third slide"
-                            />
-
-                            <Carousel.Caption>
-                            <h3>Second slide label</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                            </Carousel.Caption>
-                        </Carousel.Item>
-                        <Carousel.Item>
-                            <img
-                            className="d-block w-100"
-                            src="/assets/costumes/rory-goosebumps.jpg"
-                            alt="Third slide"
-                            />
-
-                            <Carousel.Caption>
-                            <h3>Third slide label</h3>
-                            <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-                            </Carousel.Caption>
-                        </Carousel.Item>
-                        </Carousel>
-
-                        <Carousel value="falcony">
-                    <Carousel.Item>
-                        <img
-                        className="d-block w-100"
-                        src="/assets/jdrf/jdrf1.jpg"
-                        alt="First slide"
-                        />
-                        <Carousel.Caption>
-                        <h3>First slide label</h3>
-                        <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-                        </Carousel.Caption>
-                    </Carousel.Item>
-                    <Carousel.Item>
-                        <img
-                        className="d-block w-100"
-                        src="/assets/jdrf/jdrf2.jpg"
-                        alt="Third slide"
-                        />
-
-                        <Carousel.Caption>
-                        <h3>Second slide label</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                        </Carousel.Caption>
-                    </Carousel.Item>
-                    <Carousel.Item>
-                        <img
-                        className="d-block w-100"
-                        src="/assets/jdrf/jdrf3.jpg"
-                        alt="Third slide"
-                        />
-
-                        <Carousel.Caption>
-                        <h3>Third slide label</h3>
-                        <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-                        </Carousel.Caption>
-                    </Carousel.Item>
-                    </Carousel>
+                        {this.state.displayedCarousel}
                     </div>
                 </div>
             </div>
