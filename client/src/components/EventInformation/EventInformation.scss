@@ -1,3 +1,9 @@
+.information-sub-container {
+    display: flex;
+    flex-direction: row;
+    background-color: orange;
+}
+
 .information-sub-container-one {
     height: 92vh;
     width: 100vw;
@@ -32,12 +38,6 @@
     width: 30vw;
     padding-left: 3vw;
     margin-top: 7vh;
-}
-
-.information-sub-container {
-    display: flex;
-    flex-direction: row;
-    background-color: orange;
 }
 
 .rory-healy-tournament-info {
