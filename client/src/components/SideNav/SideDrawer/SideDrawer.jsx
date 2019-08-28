@@ -19,7 +19,7 @@ const sideDrawer = props => {
                     </Link>
                 </li>
                 <li>
-                    <Link to="/AboutUs">
+                    <Link to="/About">
                         <AwesomeButton type="primary">
                             About us
                         </AwesomeButton>
