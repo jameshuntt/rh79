@@ -241,7 +241,7 @@ export default class EventInformation extends Component {
                     </div>
 
                     <div className="rory-images">
-                        {this.state.displayedCarousel}
+                        {this.state.renderComponent}
                     </div>
                 </div>
             </div>
