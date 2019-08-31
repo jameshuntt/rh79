@@ -9,7 +9,7 @@ export default class Footer extends Component {
                 <Container>
                     <Row>
                         <Col xs={12}>
-                            <hr className="footer-horizontal-line" color="red" />
+                            <hr className="footer-horizontal-line" color="red" align="left" />
                         </Col>
                     </Row>
                     <Row>

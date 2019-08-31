@@ -27,11 +27,12 @@ export default class Home extends Component {
                             </div>            
                             <div className="rory-healy-jumbotron-buttons">                    
                                 <Link to="/Register">
-                                    <AwesomeButton type="primary">
+                                    <AwesomeButton type="primary" className="home-jumbotron-button">
                                         Register
                                     </AwesomeButton>
                                 </Link>
                             </div>
+                            
                         </div>
                     </div>
                 </div>

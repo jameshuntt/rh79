@@ -46,7 +46,7 @@ export default class CustomNavbar extends Component {
                 </Link>
                 <Link to="/About">
                     <AwesomeButton variant="danger" className="navbar-button" type="primary">
-                        About us
+                        About
                     </AwesomeButton>
                 </Link>
                 <Link to="EventInformation">
