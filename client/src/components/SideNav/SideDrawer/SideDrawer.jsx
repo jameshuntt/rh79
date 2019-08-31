@@ -20,21 +20,21 @@ const sideDrawer = props => {
                 </li>
                 <li>
                     <Link to="/About">
-                        <AwesomeButton type="primary">
+                    <AwesomeButton type="primary">
                             About us
                         </AwesomeButton>
                     </Link>
                 </li>
                 <li>
                     <Link to="/EventInformation">
-                        <AwesomeButton type="primary">
+                    <AwesomeButton type="primary">
                             Information
                         </AwesomeButton>
                     </Link>
                 </li>
                 <li>
                     <Link to="/Register">
-                        <AwesomeButton type="primary">
+                    <AwesomeButton type="primary">
                             Register
                         </AwesomeButton>
                     </Link>
