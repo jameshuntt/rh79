@@ -4,6 +4,7 @@ import { AwesomeButton } from 'react-awesome-button';
 import './CustomNavbar.scss';
 import Backdrop from '../SideNav/Backdrop/Backdrop';
 import SideDrawer from '../SideNav/SideDrawer/SideDrawer';
+import drawerToggleButton from '../SideNav/SideDrawer/DrawerToggleButton';
 
 export default class CustomNavbar extends Component {
     constructor(props) {
@@ -60,7 +61,8 @@ export default class CustomNavbar extends Component {
                     </AwesomeButton>
                 </Link>
                 </div>
-                <input className="burger-menu-icon" type="image" src="/assets/hamburger-menu-icon.jpg" alt="burger" onClick={this.drawerToggleClickHandler} />
+                <drawerToggleButton className="burger-menu-icon" onClick={this.drawerToggleClickHandler} />
+                {/*<input className="burger-menu-icon" type="image" src="/assets/hamburger-menu-icon.jpg" alt="burger" onClick={this.drawerToggleClickHandler} />*/}
                 <div className="spacer2" />
                 <SideDrawer show={this.state.sideDrawerOpen} />
                 {backdrop}
