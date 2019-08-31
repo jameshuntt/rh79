@@ -1,13 +1,8 @@
 import React, { Component } from 'react';
-import ReactMapboxGl, { Layer, Feature } from 'react-mapbox-gl';
+import MapContainer from '../MapContainer/MapContainer';
 import { Carousel } from 'react-bootstrap';
 import { AwesomeButton } from 'react-awesome-button';
 import './EventInformation.scss';
-
-const Map = ReactMapboxGl({
-    accessToken:
-      'pk.eyJ1IjoiZmFicmljOCIsImEiOiJjaWc5aTV1ZzUwMDJwdzJrb2w0dXRmc2d0In0.p6GGlfyV-WksaDV_KdN27A'
-  });
 
 export default class EventInformation extends Component {
     renderComponent() {
@@ -155,16 +150,6 @@ export default class EventInformation extends Component {
             costumes: true
         })
     }
-    
-    state = {
-        viewport: {
-          width: 400,
-          height: 400,
-          latitude: 37.7577,
-          longitude: -122.4376,
-          zoom: 8
-        }
-      };
 
     render() {
         return (
@@ -182,17 +167,7 @@ export default class EventInformation extends Component {
                         </div>
                     </div>
                     <div className="rory-tournament-info">
-                    <Map
-                        style="mapbox://styles/mapbox/streets-v9"
-                        containerStyle={{
-                            height: '50vh',
-                            width: '50vw'
-                        }}
-                    >
-                        <Layer type="symbol" id="marker" layout={{ 'icon-image': 'marker-15' }}>
-                            <Feature coordinates={[-0.481747846041145, 51.3233379650232]} />
-                        </Layer>
-                    </Map>
+                    <MapContainer />
                     <h5>The tournament will be help at the White Plains Golf Course.</h5>
                     <h3>**map is supposed to go here**</h3>
                     <h2>2350 Western Ave, Guilderland, NY 12084</h2>
